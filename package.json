@@ -1,0 +1,19 @@
+{
+    "name": "graphQl tutorial",
+    "version": "1.0.0",
+    "description": "for graphQL Server",
+    "main": "index.js",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "start:dev": "node index.js",
+        "build": "rimraf ./build && tsc",
+        "start": "npm run build && node build/index.js"
+    },
+    "author": "Daniel Adegoke",
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/server": "^4.10.2",
+        "graphql": "^16.8.1"
+    }
+}
