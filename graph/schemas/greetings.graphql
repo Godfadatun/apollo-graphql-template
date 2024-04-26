@@ -1,0 +1,17 @@
+type Query {
+    greeting: String
+    dashboardCampaigns: [DashboardCampaign]
+}
+
+type DashboardCampaign {
+    code: ID!
+    title: String
+    description: String
+    stats: CampaignStats
+}
+
+type CampaignStats {
+    leadCount: Float
+    referralCount: Int
+    conversionCount: Int
+}

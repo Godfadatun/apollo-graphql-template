@@ -7,7 +7,7 @@
     "type": "module",
     "scripts": {
         "start": "nodemon",
-        "start:dev": "node index.js",
+        "start:dev": "node --experimental-specifier-resolution=node index.js",
         "start:nexus": "node indexNexus.js"
     },
     "author": "Daniel Adegoke",
